@@ -115,6 +115,9 @@ h1,h2,h3,h4,h5,h6,p,ul{
 .site-nav .link:hover,
 .site-nav .link:focus{
     color: var(--accent-color);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .call{
     display: flex;
@@ -135,6 +138,9 @@ h1,h2,h3,h4,h5,h6,p,ul{
 .call .link:focus,
 .call .link:hover{
     color: var(--accent-color);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-nav{
@@ -330,6 +336,9 @@ width: 270px;
 .soc-li a:focus{
     color: var(--white-color);
     background-color: var(--accent-color);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .soc-li:not(:first-child){
     margin-left: 10px; 
@@ -362,6 +371,9 @@ width: 270px;
 .clients-link:focus{
     color: var(--accent-color);
     border-color: var(--accent-color);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -408,6 +420,9 @@ address li:not(:last-child){
 .address:hover,
 .adress:focus{
     color: var(--accent-color);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-link{
     text-decoration: none;
@@ -420,6 +435,9 @@ address li:not(:last-child){
 .address-link:hover,
 .address-link:focus{
     color: var(--accent-color);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .join{
     margin-left: 70px;
@@ -451,7 +469,7 @@ address li:not(:last-child){
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    
+
     background-color: rgba(255, 255, 255, 0.1);
 }
 .join-li:not(:first-child){
@@ -460,6 +478,9 @@ address li:not(:last-child){
 .join-li a:hover,
 .join-li a:focus{
     background-color: var(--accent-color);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -471,7 +492,7 @@ address li:not(:last-child){
     margin-bottom: 50px;
 }
 .filter-link li:nth-child(1n+2){
-margin-left: 8px;
+    margin-left: 8px;
 }
 .filter{
     font-style: normal;
@@ -494,6 +515,9 @@ margin-left: 8px;
     background-color:  var(--accent-color);
     color: var(--white-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-filter{
     text-decoration: none;
@@ -505,6 +529,9 @@ margin-left: 8px;
 .link-filter:hover,
 .link-filter:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .galery{
@@ -587,6 +614,10 @@ padding: 20px 24px;
 .backdrop.is-hidden{
     opacity: 0;
     pointer-events: none;
+    visibility: visible;
+}
+.backdrop.is-hidden .modal{
+    transform: translate(-50%,-50%) scaleY(0);
 }
 .modal{
     position: absolute;
