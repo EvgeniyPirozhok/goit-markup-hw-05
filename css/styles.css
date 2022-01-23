@@ -451,6 +451,7 @@ address li:not(:last-child){
     border-radius: 50%;
     justify-content: center;
     align-items: center;
+    
     background-color: rgba(255, 255, 255, 0.1);
 }
 .join-li:not(:first-child){
@@ -480,11 +481,12 @@ margin-left: 8px;
     border-radius: 4px;
     padding: 6px 22px;
     border: none;
-    color: var(--tittle-text-color);
-    background: #F5F4FA;
     cursor: pointer;
     text-align: center;
     letter-spacing: 0.03em;
+
+    color: var(--tittle-text-color);
+    background: #F5F4FA;
 }
 
 .filter:hover,
@@ -502,7 +504,7 @@ margin-left: 8px;
 }
 .link-filter:hover,
 .link-filter:focus{
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .galery{
@@ -519,9 +521,10 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 .title-filter{
     font-size: 18px;
     line-height: 2;
-    color: var(--tittle-text-color);
     letter-spacing: 0.06em;
     margin-bottom: 4px;
+    
+    color: var(--tittle-text-color);
 }
 .text-filter{
     font-size: 16px;
@@ -552,12 +555,15 @@ padding: 20px 24px;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(33, 150, 243, 0.9);
-    color: var(--white-color);
+    padding: 63px 24px;
+    
     font-size: 18px;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    padding: 63px 24px;
+    
+    background: rgba(33, 150, 243, 0.9);
+    color: var(--white-color);
+
     transform: translateY(100%);
     transition-property: transform;
     transition-duration: 250ms;
@@ -575,6 +581,7 @@ padding: 20px 24px;
     left: 0;
     width: 100%;
     height: 100%;
+
     background-color: rgba(0,0,0,0.2);
 }
 .backdrop.is-hidden{
@@ -589,19 +596,29 @@ padding: 20px 24px;
 
     min-width: 528px;
     min-height: 581px;
+    border-radius: 4px;
+    
+    transition-property: transform;
+    transition-duration:250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 
     background-color: var(--white-color);
-
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .close-modal{
-    display: block;
-    margin-left: auto;
-    margin-right: 6px;
-    margin-top: 6px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    top: 8px;
+    right: 8px;
     width: 30px;
     height: 30px;
-    border: none;
     border-radius: 50%;
-    padding: 6px;
+    border: 1px solid #0000001a;
+
+    background-color: #ffffff; 
 }
 
