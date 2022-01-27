@@ -393,6 +393,8 @@ width: 270px;
 }
 .footer-container{
     display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
 }
 .logo-footer{
     font-family: Raleway;
@@ -445,7 +447,6 @@ address li:not(:last-child){
 }
 .join{
     margin-left: 70px;
-    padding-top: 10px;
 }
 .header-footer{
     display: flex;
